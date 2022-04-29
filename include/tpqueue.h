@@ -16,8 +16,9 @@ class TPQueue {
     item->next = nullptr;
     return item;
   }
+ 
  public:
-  TPQueue() : head(nullptr) { };
+  TPQueue() : head(nullptr) { }
   void push(const T& item) {
     if (!head) {
       head = create(item);
